@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O meni</title>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("slike/pozadina1.jpg");
+}
+
+header {
+    background-color: #3c3c3c;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Changed font */
+    transition: all 0.3s ease;
+}
+
+header nav a:hover {
+    background-color: #555;
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    color: #333;
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+p {
+    color: #444;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Display images in three columns */
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.center {
+    text-align: center;
+}
+
+.center p {
+    margin-top: 20px;
+}
+
+.center p a {
+    color: #fff;
+    text-decoration: none;
+    background-color: #3c3c3c;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Changed font */
+    transition: all 0.3s ease;
+}
+
+.center p a:hover {
+    background-color: #555;
+}
+
+@media (max-width: 768px) {
+    .gallery img {
+        width: calc(100% / 2 - 10px); /* Two images in a row */
+    }
+}
+
+@media (max-width: 576px) {
+    .gallery img {
+        width: 100%; /* One image in a row */
+    }
+}
+</style>
+</head>
+<body>
+<header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="vjezbe.html">Vježbe</a>
+        <a href="video.html">Reklama</a>
+    </nav>
+</header>
+<div class="container">
+    <h3>O meni:</h3>
+    <p>U slobodno vrijeme volim igrat nogomet i ići u teretanu. 
+Također volim s prijateljima izać van i zabaviti se.
+Volim životinje. 
+U budućnosti bih se volio baviti građevinom.</p>
+</div>
+
+<div class="container">
+    <h3>My Gallery</h3>
+    <div class="gallery">
+        <img src="slike/slika1.jpeg" alt="Image 1">
+        <img src="slike/slika2.jpeg" alt="Image 2">
+        <img src="slike/slika3.jpeg" alt="Image 3">
+        <img src="slike/slika4.jpeg" alt="Image 4">
+        <img src="slike/slika5.jpeg" alt="Image 5">
+        <img src="slike/slika6.jpeg" alt="Image 6">
+    </div>
+</div>
+
+<div class="center">
+    <p><a href="https://youtu.be/7flz6hbOB5I?si=0rADpX-iVSvEYZPv">MARIO MANDŽUKIĆ</a></p>
+</div>
+
+</body>
+</html>

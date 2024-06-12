@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video</title>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("slike/pozadina1.jpg");
+}
+
+header {
+    background-color: #3c3c3c;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Changed font */
+    transition: all 0.3s ease;
+}
+
+header nav a:hover {
+    background-color: #555;
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    color: #333;
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+p {
+    color: #444;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Display images in three columns */
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.center {
+    text-align: center;
+}
+
+.center p {
+    margin-top: 20px;
+}
+
+.center p a {
+    color: #fff;
+    text-decoration: none;
+    background-color: #3c3c3c;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Changed font */
+    transition: all 0.3s ease;
+}
+
+.center p a:hover {
+    background-color: #555;
+}
+
+@media (max-width: 768px) {
+    .gallery img {
+        width: calc(100% / 2 - 10px); /* Two images in a row */
+    }
+}
+
+@media (max-width: 576px) {
+    .gallery img {
+        width: 100%; /* One image in a row */
+    }
+}
+
+/* Added CSS for video centering */
+.video-container {
+    display: flex;
+    justify-content: center;
+}
+
+.video-container video {
+    width: 80%;
+    max-width: 100%;
+    height: auto;
+}
+</style>
+</head>
+<body>
+<header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="vjezbe.html">Vježbe</a>
+        <a href="o_meni.html">O meni</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h3>Reklama moga proizvoda:</h3>
+    <div class="video-container">
+        <video controls autoplay>
+            <source src="slike/ivanvideo.mp4" type="video/mp4">
+        </video>
+    </div>
+</div>
+
+<div class="container">
+    <h3>Postupak izrade:</h3>
+    <p>Video je izrađen u Adobe Premiere Pro. Tokom cijelog videa se koriste efekti rotate, i fade in i fade out. Na videu je ubačena muzika koja dodaje žara reklami. U videu su istaknute dvije vrste teksta jedan je statičan drugi je pokretan a to je i sam brand koji se reklamira.</p>
+</div>
+
+</body>
+</html>
