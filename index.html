@@ -5,6 +5,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ivan Poldrugač - digitalni multimedij</title>
 <style>
+@charset "UTF-8";
+	/* CSS Document*/
+
+@font-face {
+font-family: "IvanPoldrugac";
+src: url("font/font1.ttf") format("truetype");
+font-weight: normal;
+font-style: normal;
+}
+h1 span {
+	font-family: "IvanPoldrugac";
+	font-size: 60px;
+	color:lightgray;
+}
 body {
     margin: 0;
     padding: 0;
@@ -108,12 +122,7 @@ p {
     .gallery img {
         width: 100%; /* One image in a row */
     }
-}
-h1 {
-    font-family: "IvanPoldrugac";
-    src: url("font/font1.ttf");
-    font-size: 40px;
-    color: #333;
+
 </style>
 </head>
 <body>
@@ -125,7 +134,7 @@ h1 {
     </nav>
 </header>
 <div class="container">
-    <center><h1>Ivan Poldrugač</h1></center>
+    <center><h1><span>Ivan Poldrugač</span></h1></center>
     <p>Dobrodošli na moju stranicu, ja sam Ivan Poldrugač. Pogledaj moju stranicu i saznaj nešto više o meni!</p>
 </div>
 
